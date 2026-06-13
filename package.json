@@ -1,0 +1,32 @@
+{
+  "name": "quartz-exclude-folders",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "quartz": {
+    "name": "exclude-folders",
+    "displayName": "Exclude Folders",
+    "description": "Hides all files within specified folders from search, sitemap, RSS, explorer, and graph.",
+    "version": "1.0.0",
+    "category": "filter",
+    "defaultOrder": 50,
+    "defaultOptions": {
+      "folders": []
+    }
+  },
+  "scripts": {
+    "build": "tsup"
+  },
+  "devDependencies": {
+    "@quartz-community/types": "github:quartz-community/types",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  }
+}
